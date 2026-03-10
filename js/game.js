@@ -194,7 +194,7 @@ function openQuiz(index) {
       });
 
       if (answerIndex === item.correct) {
-        quizFeedback.textContent = "ätt svar! Du kan springa vidare.";
+        quizFeedback.textContent = "Rätt svar! Du kan springa vidare.";
         nextSignIndex += 1;
         updateSigns();
         if (nextSignIndex >= signStops.length) {
@@ -471,3 +471,4 @@ window.addEventListener("resize", () => {
 updateBackground();
 updateFrame();
 updateNicolinaFrame();
+
