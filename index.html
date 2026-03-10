@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>RACCOON QUEST</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<main class="game" id="game" aria-label="Tap game area">
+		<header class="hud">
+			<h1>TVÄTTBJÖRNSUPPDRAGET</h1>
+			<p>Daniels resa till Nicolina</p>
+		</header>
+
+		<section class="intro-popup" id="introPopupOne" aria-live="polite" role="dialog">
+			<p>
+				Nicolina har tappat bort sig
+				<br />
+				i den stora grå staden.
+				<br /><br />
+				Daniel har gett sig ut
+				<br />
+				för att hitta henne.
+				<br /><br />
+				Lyckligtvis har han
+				<br />
+				en mycket samarbetsvillig tvättbjörn.
+			</p>
+			<button id="introContinue" type="button">FORTSÄTT</button>
+		</section>
+
+		<section class="intro-popup hidden" id="introPopupTwo" aria-live="polite" role="dialog">
+			<p>
+				Tryck på skärmen
+				<br />
+				för att röra dig framåt.
+				<br /><br />
+				Svarar du rätt på frågorna
+				<br />
+				kommer du närmare Nicolina.
+			</p>
+			<button id="introStartJourney" type="button">BÖRJA RESAN</button>
+		</section>
+
+		<section class="mini-finale hidden" id="miniFinale" aria-live="polite">
+			<p>UPPDRAGET SLUTFÖRT</p>
+			<button id="miniFinaleContinue" type="button">FORTSÄTT</button>
+		</section>
+
+		<section class="mini-finale-details hidden" id="miniFinaleDetails" aria-live="polite">
+			<p>
+				Daniel har nått Nicolina.
+				<br /><br />
+				Efter många frågor,
+				<br />
+				lite tvättbjörnsridning
+				<br />
+				och en resa genom den grå staden
+				<br /><br />
+				har han äntligen kommit fram.
+			</p>
+			<button id="miniFinaleDetailsContinue" type="button">FORTSÄTT</button>
+		</section>
+
+		<div class="track" id="track">
+			<canvas id="sprite" class="sprite" role="img" aria-label="Daniel sprite"></canvas>
+			<canvas id="nicolina" class="nicolina hidden" role="img" aria-label="Nicolina sprite"></canvas>
+			<section class="together-scene hidden" id="togetherScene" aria-live="polite">
+				<p>
+                    Nicolina är väldigt tacksam för att Daniel hittade henne. 
+                    De lever lyckliga tillsammans i alla sina dagar.
+				</p>
+				<img src="assets/together.png" alt="Daniel och Nicolina tillsammans" />
+			</section>
+		</div>
+
+		<section class="quiz hidden" id="quizOverlay" aria-live="polite" aria-modal="true" role="dialog">
+			<div class="quiz-card">
+				<h2 id="quizHeading">FRÅGA</h2>
+				<p id="quizQuestion"></p>
+				<div class="quiz-answers" id="quizAnswers"></div>
+				<p class="quiz-feedback" id="quizFeedback"></p>
+			</div>
+		</section>
+	</main>
+
+	<script src="js/game.js"></script>
+</body>
+</html>

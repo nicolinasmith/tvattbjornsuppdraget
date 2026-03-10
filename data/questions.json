@@ -1,0 +1,56 @@
+[
+  {
+    "question": "Vad fanns i det första kinderägget som Nicolina fick?",
+    "answers": ["Lejon", "Vårtsvin", "Surrikat"],
+    "correct": 0
+  },
+  {
+    "question": "Vilken veckodag hånglade vi sönder på Söder?",
+    "answers": ["Fredag", "Söndag", "Tisdag"],
+    "correct": 2
+  },
+  {
+    "question": "Hur många gånger har vi varit på högmässa tillsammans?",
+    "answers": ["1", "2", "666"],
+    "correct": 0
+  },
+  {
+    "question": "Enligt Daniel & the Hanzes så är Nicolina...",
+    "answers": [
+      "En väldigt ovanlig utterdam",
+      "En helt vanlig grodtjej",
+      "En lagom normal snigelkvinna"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Du, jag och...?",
+    "answers": ["Xbox", "Daniel Öhman", "Apokalypsen"],
+    "correct": 2
+  },
+  {
+    "question": "Vilken är vår bästa grönsak?",
+    "answers": ["Brysselkål", "Paprika", "Gurka"],
+    "correct": 0
+  },
+  {
+    "question": "Vilken aktivitet har vi ägnat mest tid till?",
+    "answers": ["Bäckpromenader", "Läsa Lenin", "Groda"],
+    "correct": 2
+  },
+  {
+    "question": "Vilken kommer att bli vår första gemensamma festival?",
+    "answers": ["Vingåkersvrålet", "Månegarm open air", "Skogsröjet"],
+    "correct": 0
+  },
+  {
+    "question": "Vilken låt försöker Daniel uppmuntra Nicolina att lära sig på gitarr?",
+    "answers": ["Override the overture", "Holy diver", "Raining blood"],
+    "correct": 1
+  },
+  {
+    "question": "Vem tycker Nicolina om mest i hela världen?",
+    "answers": ["Daniel Hanses", "Kjell Höglund", "Robert Mugabe"],
+    "correct": 0
+  }
+]
