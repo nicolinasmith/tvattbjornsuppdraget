@@ -166,7 +166,7 @@ function openQuiz(index) {
     return;
   }
 
-  let hasAnswered = false;
+  let isQuestionCompleted = false;
   isQuizOpen = true;
   quizOverlay.classList.remove("hidden");
   quizFeedback.textContent = "";
@@ -183,17 +183,18 @@ function openQuiz(index) {
     button.type = "button";
     button.textContent = answer;
     button.addEventListener("click", () => {
-      if (hasAnswered) {
+      if (isQuestionCompleted || button.disabled) {
         return;
       }
-      hasAnswered = true;
-
-      // Lock all answers after first click so question index cannot skip on double-tap.
-      quizAnswers.querySelectorAll("button").forEach((btn) => {
-        btn.disabled = true;
-      });
 
       if (answerIndex === item.correct) {
+        isQuestionCompleted = true;
+
+        // Lock all answers after correct click so question index cannot skip on double-tap.
+        quizAnswers.querySelectorAll("button").forEach((btn) => {
+          btn.disabled = true;
+        });
+
         quizFeedback.textContent = "Rätt svar! Du kan springa vidare.";
         nextSignIndex += 1;
         updateSigns();
@@ -202,6 +203,8 @@ function openQuiz(index) {
         }
         setTimeout(closeQuiz, 1000);
       } else {
+        // Prevent repeatedly selecting the same wrong answer, but allow other guesses.
+        button.disabled = true;
         quizFeedback.textContent = "Fel svar. Försök igen för att komma vidare.";
       }
     });
@@ -471,4 +474,3 @@ window.addEventListener("resize", () => {
 updateBackground();
 updateFrame();
 updateNicolinaFrame();
-
