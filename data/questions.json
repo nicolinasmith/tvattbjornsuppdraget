@@ -5,12 +5,12 @@
     "correct": 0
   },
   {
-    "question": "Vilken veckodag hånglade vi sönder på Söder?",
+    "question": "Vilken veckodag hånglade Daniel och Nicolina sönder på Söder?",
     "answers": ["Fredag", "Söndag", "Tisdag"],
     "correct": 2
   },
   {
-    "question": "Hur många gånger har vi varit på högmässa tillsammans?",
+    "question": "Hur många gånger har Daniel och Nicolina varit på högmässa tillsammans?",
     "answers": ["1", "2", "666"],
     "correct": 0
   },
@@ -29,17 +29,17 @@
     "correct": 2
   },
   {
-    "question": "Vilken är vår bästa grönsak?",
+    "question": "Vilken är Daniel och Nicolinas bästa grönsak?",
     "answers": ["Brysselkål", "Paprika", "Gurka"],
     "correct": 0
   },
   {
-    "question": "Vilken aktivitet har vi ägnat mest tid till?",
+    "question": "Vilken aktivitet har Daniel och Nicolina ägnat mest tid åt?",
     "answers": ["Bäckpromenader", "Läsa Lenin", "Groda"],
     "correct": 2
   },
   {
-    "question": "Vilken kommer att bli vår första gemensamma festival?",
+    "question": "Vilken kommer att bli Daniel och Nicolinas första gemensamma festival?",
     "answers": ["Vingåkersvrålet", "Månegarm open air", "Skogsröjet"],
     "correct": 0
   },
